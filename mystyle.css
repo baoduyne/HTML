@@ -28,14 +28,22 @@ body {background-color:#f2f2f2}
 	.city:hover{
 	background-color:red;
 	}
+	/*.clearfix{
+		overflow:auto;
+	}*/
+	.clearfix::after{
+		display:table;
+		clear:both;
+		content:"";
+	}
 	
-	img {
-	display : block;
-	alt : moon;
-	width: 500px;
-	margin-left: auto;
-  	margin-right: auto;
-	height : 350px;
+	img.class1 {
+	display:block;
+	width: 30%;
+	height: auto;
+	margin-top: 100px;
+	margin-left:auto;
+	margin-right: auto;
 	}	
 
 	table {
@@ -151,7 +159,7 @@ body {background-color:#f2f2f2}
 		height: 170px;
 		padding: 10px;
 		margin-left:570px;
-		overflow-y:scroll;
+		overflow:auto;
 		text-align:justify;
 		/*text-align: justify;*/
 	}
