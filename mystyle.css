@@ -196,6 +196,7 @@ body {background-color:#f2f2f2}
 	div.aligntest p::first-letter{
 		color:red;
 		font-family: 'Times New Roman', Times, serif;
+		font-size:large;
 	}
 	div.aligntest img{
 		float : left;
@@ -203,9 +204,11 @@ body {background-color:#f2f2f2}
 		margin-right:10px;
 		margin-left:5px;
 	}
+
 	div.aligntest img:hover{
 		opacity:0.5;
 	}
+
 	
 	div.testwidth{
 		max-width: 300px;
@@ -301,13 +304,13 @@ body {background-color:#f2f2f2}
 	div.dropdown:hover .itemdropdown{
 		display:block;
 	}
-
+/*????doent work*/
 	#img.sprites1 {
-		margin-top:100px;
-		width:50px;
-		height:50px;
-		background : url(https://i.pinimg.com/564x/74/0a/3e/740a3e8000049c39fe5c686f00bddb4a.jpg) 0 0 ;
+		width:100px;
+		height:100px;
+		background :url(https://i.pinimg.com/564x/da/0a/58/da0a587bb67366b86484113c7d7f3fc6.jpg) 0 0 ;
 	}
+/*????*/
 
 
 
