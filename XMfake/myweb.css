@@ -1,0 +1,376 @@
+body{
+    
+}
+
+*{
+    color:#03b57b;
+    color:#fefefe;
+    color:#595456;
+    color:#323232;
+    color:#ea940c;
+
+}
+
+.header {
+    font-size:200%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 40%;
+}
+
+.header h1{
+    font-size:150%;
+    float:left;
+}
+
+.paragraph{
+    font-size:110%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    text-justify:auto;
+}
+
+.paragraph::first-letter{
+    color:Red;
+    font-size: large;
+}
+
+.row::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+
+.col-left{
+    width: 70%;
+    height:auto;
+    float:left;
+    margin-right: 20px;
+    margin-top:0%;
+
+
+}
+
+.col-right{
+    margin-top:2%;
+    width:25%;
+    float : left;
+    height:auto;
+    padding-left: 20px;
+
+}
+
+.tab{
+    width: 100%;
+    height:auto;
+    background-color:#595456;
+    float:left;
+}
+
+.tab p {
+    font-size:100%;
+    float:left;
+    color:#fefefe;
+    text-justify: auto;
+}
+
+.tab img{
+    float:left;
+    width:150px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+.tab img:hover{
+    opacity: 0.7;
+}
+
+/* input menu */
+
+#label{
+    color:#fefefe;
+    font-size:110%;
+    left:30%;
+    position: relative;
+}
+
+.tab textarea{
+    width: 70%;
+    height:150px;
+    outline: none;
+    margin-left:15%;    
+    margin-top:20px
+}
+
+.button{
+    padding:15px 25px;
+    float:left;
+    margin:0;
+    background-color:#ea940c;
+    color:#fefefe;
+}
+
+
+
+/* input menu */
+
+/*Scrollbar menu*/
+
+.menu{
+width: 100%;
+height:auto;
+position: fixed;
+background-color:#323232;
+float:left;
+border-radius: 20px;
+z-index: 1;
+}
+.menu ul{
+list-style-type: none;
+float:left;
+padding:0;
+margin:0;
+margin-left:5%;
+}
+.menu li{
+float:left; 
+margin:0;
+}
+.menu a{
+width: 50%;
+padding:15px 35px;
+float:left;
+background-color: #323232	;   
+text-align: center;
+color:white;
+text-decoration: none;
+}
+
+
+
+.menu a:hover{
+    background-color:#03b57b ;
+}
+
+.menu input {
+    width: 2.8%;
+    height:auto;    
+    float:left;
+    outline: none;
+    margin-left:5%;
+    padding:15px 15px 15px 45px; 
+    border-radius: 20px;
+    background-image: url(https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png);
+    background-position: 10px;
+    background-size: 30px;
+    background-repeat:no-repeat;
+    transition: width 0.4s ease-in-out;
+}
+
+.menu img{
+    float:left;
+    width: 50px;
+    height:50px;
+}
+
+
+.menu input:hover,input:focus{
+    width:12%;
+}
+
+/*scrollbar menu*/
+
+
+
+a.loginbtn{
+width:5%;
+height:auto;
+margin:0;
+border-radius: 10px;
+text-align: center;
+float:right;
+z-index: 1;
+}
+
+a.registerbtn{
+ width:5%;
+ height:auto;
+ 
+ border-radius: 10px;
+ margin:0;
+ text-align: center;
+ float:right;
+}
+#register:hover{
+    background-color: #595456;
+}
+
+#float-right{
+    float:right;
+    margin-left:130px;
+}
+
+
+.post{
+    width: 100%;
+    height: auto;
+    background-color: #fefefe;
+    clear:left;
+}
+
+.tab table{
+    width: 80%;
+    height: auto;
+    float:left;
+    border: 1px solid #323232;
+    background-color: white;
+    margin-left: 10%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+.tab th{
+padding:15px 25px;
+color:#ea940c;
+border: 1px solid #323232; 
+}
+.tab td{
+color:black;
+padding:15px 25px;
+text-align: center;
+border-bottom: 1px radius white;
+}
+
+/*footer*/
+.foot {
+    width: 100%;
+    height:auto;
+    float:left;
+    margin-top:3%;
+    overflow:hidden;
+    background-color: #323232;
+}
+
+.foot h1{
+    text-align: center;
+    font-size: large;
+    color:white;
+    font-size:170%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:20px;
+    margin-bottom: 40px;
+}
+
+.foot p{
+    text-align: center;
+    color:white;
+    font-size:100%;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.6;
+}
+
+.footimg {
+width: 100%;
+margin-left: 45%;
+}
+#footimg{
+    width:40px;
+    height:40px;
+    background-color:#fefefe;
+    border-radius: 50%;
+    float:left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.footbottom{
+    width:100%;
+    height: 30px;
+    background-color: #595456;
+    clear:left;
+}
+
+
+
+/*
+.contact{
+width : 30%;
+height:auto;
+float:left;
+margin-left: 5%;
+}
+
+.contact p{
+    float:left;
+    color:white;
+    font-size: 150%;
+    margin-left:8%;
+}
+
+.contact ul{
+width: 100%;
+height: auto;
+list-style-type: none;
+float:left;
+}
+
+.contact li{
+    color:black;
+    font-size:100%;
+    text-decoration: none;
+    margin-top:10%;
+}
+
+.contact li a{
+    color:white;
+}
+
+.contact li:hover{
+    text-decoration:underline;
+    text-decoration-color: white;
+}
+
+
+
+*/
+
+/*footer*/
+
+.logo{
+    background-color:white;
+    border-radius: 35px;
+    float :left;
+    width: 60px;
+}
+
+.logofooter{
+    margin-left: 5%;
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .col-left, .col-right {   
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .tab{
+        width: 100%;
+    }
+    a.loginbtn , a.registerbtn{
+        float:left;
+    }
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    .tab{
+        width: 100%;
+    }
+  }

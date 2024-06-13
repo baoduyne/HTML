@@ -423,3 +423,21 @@ label.btnsubmit a:hover{
 
 /*Responsive*/
 
+
+/*adjust smaller screen*/
+@media screen and (max-width: 600px) {
+	.menu {
+	  width: 100%;
+	}
+	.aligntest{
+		width:100%;
+	}
+	.dropdown{
+		width:100%;
+	}
+	.container{
+		width:100%;
+	}
+  }
+
+/* adjust smaller screen  */
