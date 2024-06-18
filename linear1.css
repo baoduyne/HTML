@@ -1,0 +1,5 @@
+div.line1{
+    padding:15px 25px;
+    background-image: linear-gradient(to right,rgb(256,0,0,0),rgb(256,0,0,1))
+}
+
