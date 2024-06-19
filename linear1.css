@@ -2,4 +2,9 @@ div.line1{
     padding:15px 25px;
     background-image: linear-gradient(to right,rgb(256,0,0,0),rgb(256,0,0,1))
 }
+div.line2{
+    margin-top: 50px;
+    padding:15px 25px;
+    background-image: linear-gradient(to left , rgb(256,0,0,0) , rgb(256,0,0,1));
+}
 

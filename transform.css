@@ -1,0 +1,25 @@
+.trans{
+position: relative;
+left: 5%;
+width: 25%;
+text-align: center;
+border : 1px solid black;
+float:left;
+}
+
+.trans p{
+    color:black;
+    padding:25px;
+}
+
+#trans1:hover{
+    transform: rotateY(30deg);
+}
+
+#trans2:hover{
+    transform:scale(2,2);
+}
+
+#trans3:hover{
+    transform: skew(20deg,20deg);
+}

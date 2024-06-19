@@ -1,0 +1,45 @@
+body{
+    font-family: myfirstfont;
+}
+
+div.overflow{
+    width: 100px;
+    height :20px;
+    border : 1px dotted black;
+    position: relative;
+    left:0%;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    word-wrap:break-word;
+    writing-mode:horizontal-tb;
+}
+
+div.overflow:hover{
+    overflow: visible;
+    height:auto;
+}
+
+
+div.texttest{
+width: 300px;
+position: relative;
+border:1px dotted black;
+text-align: center;
+margin-top : 50px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+}
+
+div.texttest p{
+color:black;
+padding:15px 25px;
+}
+
+@font-face {
+    font-family: "myfirstfont";
+    src: url(sansation_light.woff);
+}
+
+
+
