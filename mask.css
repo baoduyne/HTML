@@ -1,0 +1,12 @@
+.mask{
+-webkit-mask-image: url(https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2014/10/mask-image.png?x98267);
+mask-image: url(https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2014/10/mask-image.png?x98267);
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}
+.mask img{
+    width: 100%;
+    height:300px;
+    object-fit:contain;
+}
