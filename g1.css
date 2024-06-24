@@ -1,0 +1,46 @@
+
+.bookself{
+    width: 100%;
+    background-color:lightgray;
+    float:left;
+}
+
+.img1{
+    width:150px;
+    height:400px;
+    object-fit: cover;
+    object-position: 55% 100%;
+    float:left;
+    margin:5px;
+}
+
+.full{
+  object-fit: contain;
+  height: 130px;
+}
+
+.half{
+    object-position: 50% 50%;
+    height: 130px;
+}
+
+.fit{
+    object-fit: cover;
+    width: 350px;
+    height:130px;
+    object-position: 10% 94%;
+}
+
+.fit1{
+    object-fit: cover;
+    height:130px;
+    width:350px;
+    object-position:10% 20%;
+}
+
+.fit2{
+    object-fit: cover;
+    height:120px;
+    width:350px;
+    object-position:10% 65%;
+}
