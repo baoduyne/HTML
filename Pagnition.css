@@ -1,0 +1,30 @@
+.center{
+    text-align: center;
+}
+
+.menu{
+    width:30%;
+}
+
+.menu a{
+    float:left;
+    padding:15px;
+    border: 1px solid black;
+}
+.menu a.active{
+background-color: chartreuse;
+}
+
+.menu a:hover:not(.active){
+    background-color: grey;
+}
+
+.menu a:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.menu a:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
