@@ -1,0 +1,28 @@
+.container{
+    width:300px;
+    min-width:300px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+    resize: horizontal;
+    overflow: auto;
+
+}
+
+.container p{
+    padding:10px;
+    text-justify:auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container:hover {
+outline : 5px solid red;
+outline-offset: 5px;
+}
+
+
+.container p::first-letter{
+    color:red;
+    font-size: large;
+}
