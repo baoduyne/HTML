@@ -36,6 +36,8 @@ div.Container{
     border:1px solid var(--light_black);
     -webkit-transition: all 1s ease;
     transition: all 0.5 ease;
+    position: relative;
+    left:2%;
     overflow: hidden;
 }
 
@@ -52,8 +54,8 @@ div.Container{
 }
 
 .board:hover{
-    width: 135px;
-    left:-5%;
+    width: 150px;
+    left:0;
 }
 
 .cube{
