@@ -27,3 +27,34 @@ result += `</ul>`;
 
 
 document.getElementById("id1").innerHTML = result;
+
+
+
+
+const Car = {
+        Car_name : "",
+        Brand : "Toyota",
+        year_release : 2000,
+
+        go : function(Car_name,Brand,year_release){
+            this.Car_name = Car_name ; this.Brand = Brand; this.year_release = year_release; 
+        },
+
+        show : function (){
+            return this.Car_name + this.Brand + this.year_release; 
+        }
+}
+
+const vector_ = [];vector_[0] = Car;
+
+let dcm = `<p>`;
+
+
+    dcm += `${vector_[0].show()}`;
+
+
+dcm += `</p>`
+
+
+
+document.getElementById("id2").innerHTML = dcm;
