@@ -1,0 +1,24 @@
+.container{
+    border : 1px solid black;
+    width: 300px;
+    float:left;
+    margin-left : 30px;
+}
+
+.container table {
+    position: relative;
+    border : 1px solid black;
+    height: 300px;
+    width: 200px;
+    margin:30px;
+}
+
+.container th{
+    border: 1px solid black;
+    color :red;
+    padding : 15px 25px;
+}
+.container td{
+    color :black;
+    padding :15px 25px;
+}
