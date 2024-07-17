@@ -1,0 +1,38 @@
+.container {
+    width: 850px;
+    position: relative;
+    left : 20%;
+    margin-top: 50px;
+    text-align: center;
+    display : flex;
+    flex-flow : row wrap;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
+}
+
+.clock {
+
+    text-align: center;
+    padding : 15px 30px;
+    color : black;
+  
+    border : 1px solid black;
+    margin:30px ;
+}
+
+.btn{
+    margin : 50px 0;
+    position: relative;
+    left : 40%;
+    width: 200px;
+    padding : 15px 25px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+.btn:hover{
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
