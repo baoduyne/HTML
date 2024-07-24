@@ -1,0 +1,80 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+}
+
+.menu-bar{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgb(0,0,0,0.3);
+    flex-flow: row wrap;
+    
+}
+
+.logo{
+width: 80px;
+height: 80px;
+border-right: 1px solid rgb(0,0,0,0.3);
+position: relative;
+}
+.logo img{
+    width: 50px;
+    margin : 15px;
+    
+}
+
+#clock{
+    position: relative;
+    left : 2%;
+}
+
+.menu-bar input{
+    position: relative;
+    margin : 12px;
+    outline: none;
+    padding : 15px 15px 15px 30px;
+    border-radius: 40px;
+    border : 1px black solid;
+    width: 100px;
+    height: 50px;
+    left: 10%;
+    transition: width 1s;
+    background-image: url(https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 5px;
+    background-position-y: 15px;
+}
+
+.menu-bar input:focus{
+    width: 400px;
+}
+
+.darklight{
+    position: absolute;
+    margin : 15px;
+    width:110px;
+    border-radius: 30px;
+    height: 50px;
+    left: 70%;
+    background-color: rgb(242, 242, 242);
+}
+
+#buttonLight{
+width: 45px;
+height: 45px;
+margin:5px;
+border-radius: 50px;
+border : 1px solid black;
+}
+
+#buttonDark{
+width: 45px;
+height: 45px;
+margin : 5px 5px 5px 0; 
+border-radius: 60px;
+border : 1px solid black;
+}
