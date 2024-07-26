@@ -1,5 +1,40 @@
 window.addEventListener("load",setTime());
 
+let cur = 0;
+let buttonBackground = document.getElementById("buttonBackground");
+let buttonDark = document.getElementById("buttonDark");
+let buttonLight = document.getElementById("buttonLight");
+let body = document.body;
+
+let dashBoast = document.getElementById("Menu1");
+let task = document.getElementById("Menu2");
+let manage = document.getElementById("Menu3");
+let profile= document.getElementById("Menu4");
+
+
+body.classList.add("lightmode");
+
+function toggleDarkMode(){
+ 
+    if(cur == 0){
+      body.classList.replace("lightmode","darkmode");
+      buttonDark.style.backgroundColor = "white";
+      buttonLight.style.backgroundColor = "rgb(242, 242, 242)";
+      cur++;
+    }
+
+    else{
+      body.classList.replace("darkmode","lightmode");
+      buttonDark.style.backgroundColor = "rgb(242, 242, 242)";
+      buttonLight.style.backgroundColor = "white";
+      cur--;
+    }
+}
+
+
+buttonDark.addEventListener("click",() => toggleDarkMode());
+buttonLight.addEventListener("click",() => toggleDarkMode());
+
 function setTime(){
     const data = new Date();
     let day = data.getDay();
@@ -45,3 +80,50 @@ function checktime(data){
     }
     return data;
 }
+
+window.addEventListener("load",() => {
+  dashBoast.classList.add("menu-item");
+  task.classList.add("menu-item");
+  manage.classList.add("menu-item");
+  profile.classList.add("menu-item");
+
+  let img = document.createElement("img");
+  let para = document.createElement("p");
+
+    img.src = "./Picture/home.png";
+    img.classList.add("menu-icon");
+    para.innerHTML = "DashBoard";
+    dashBoast.appendChild(img);
+    dashBoast.appendChild(para);
+    dashBoast.addEventListener("click",() => {
+      img.src = "./Picture/homeOpen.png";
+    })
+    
+    let img1 = document.createElement("img");
+    let para1 = document.createElement("p");
+    img1.src = "./Picture/task.png";
+    img1.classList.add("menu-icon");
+    para1.innerHTML = "Task";
+    task.appendChild(img1);
+    task.appendChild(para1);
+
+    let img2 = document.createElement("img");
+    let para2 = document.createElement("p");
+    img2.src = "./Picture/manage.png";
+    img2.classList.add("menu-icon");
+    para2.innerHTML = "Manage";
+    manage.appendChild(img2);
+    manage.appendChild(para2);
+
+    let img3 = document.createElement("img");
+    let para3 = document.createElement("p");
+    img3.src = "./Picture/profile.png";
+    img3.classList.add("menu-icon");
+    para3.innerHTML = "Profile";
+    profile.appendChild(img3);
+    profile.appendChild(para3);
+
+
+
+
+});
