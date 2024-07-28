@@ -97,8 +97,15 @@ window.addEventListener("load",() => {
     dashBoast.appendChild(para);
     dashBoast.addEventListener("click",() => {
       img.src = "./Picture/homeOpen.png";
-    })
-    
+      dashBoast.classList.add("menu-item-focus");
+      task.classList.remove("menu-item-focus");
+      manage.classList.remove("menu-item-focus");
+      profile.classList.remove("menu-item-focus");
+      img1.src = "./Picture/task.png";
+      img2.src = "./Picture/manage.png";
+      img3.src = "./Picture/profile.png";
+    });
+
     let img1 = document.createElement("img");
     let para1 = document.createElement("p");
     img1.src = "./Picture/task.png";
@@ -106,6 +113,16 @@ window.addEventListener("load",() => {
     para1.innerHTML = "Task";
     task.appendChild(img1);
     task.appendChild(para1);
+    task.addEventListener("click",() => {
+      img1.src = "./Picture/taskOpen.png";
+      task.classList.add("menu-item-focus");
+      dashBoast.classList.remove("menu-item-focus");
+      manage.classList.remove("menu-item-focus");
+      profile.classList.remove("menu-item-focus");
+      img.src = "./Picture/home.png";
+      img2.src = "./Picture/manage.png";
+      img3.src = "./Picture/profile.png";
+    });
 
     let img2 = document.createElement("img");
     let para2 = document.createElement("p");
@@ -114,6 +131,16 @@ window.addEventListener("load",() => {
     para2.innerHTML = "Manage";
     manage.appendChild(img2);
     manage.appendChild(para2);
+    manage.addEventListener("click",() => {
+      img2.src = "./Picture/manageOpen.png";
+      manage.classList.add("menu-item-focus");
+      dashBoast.classList.remove("menu-item-focus");
+      task.classList.remove("menu-item-focus");
+      profile.classList.remove("menu-item-focus");
+      img.src = "./Picture/home.png";
+      img1.src = "./Picture/task.png";
+      img3.src = "./Picture/profile.png";
+    });
 
     let img3 = document.createElement("img");
     let para3 = document.createElement("p");
@@ -122,8 +149,15 @@ window.addEventListener("load",() => {
     para3.innerHTML = "Profile";
     profile.appendChild(img3);
     profile.appendChild(para3);
-
-
-
-
+    profile.addEventListener("click",() => {
+      img3.src = "./Picture/profileOpen.png";
+      profile.classList.add("menu-item-focus");
+      dashBoast.classList.remove("menu-item-focus");
+      task.classList.remove("menu-item-focus");
+      manage.classList.remove("menu-item-focus");
+      img.src = "./Picture/home.png";
+      img1.src = "./Picture/task.png";
+      img2.src = "./Picture/manage.png";
+    });
 });
+  

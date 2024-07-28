@@ -71,7 +71,7 @@ position: relative;
 }
 
 .darklight:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #buttonBackground{
@@ -125,9 +125,6 @@ transition: background-color 2s;
 }
 
 
-
-
-
 .menu-column{
 position: relative;
 width: 300px;
@@ -148,6 +145,11 @@ flex-flow: column wrap;
 
 .menu-item:hover{
 background-color: rgb(0,0,0,0.1);
+}
+.menu-item-focus{
+    background-color: rgb(0,0,0,0.1);
+    color : var(--DodgerBlue);
+    
 }
 
 .menu-item p{
