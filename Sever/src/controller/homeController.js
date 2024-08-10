@@ -5,7 +5,7 @@ let getHomePage = async (req,res) => {
         let data = await db.User.findAll();
         console.log("----------");
         console.log(data);
-        console.log("----------");``
+        console.log("----------");
         return res.render("homepage.ejs",{
             data: JSON.stringify(data)
         });
@@ -13,7 +13,6 @@ let getHomePage = async (req,res) => {
     catch(e){
         console.log(e);
     }
-
 }
 
 let getAboutPage = (req,res) =>{
