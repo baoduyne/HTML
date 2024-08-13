@@ -5,7 +5,13 @@ const { sequelize } = require('../models');
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Users', {
+    await queryInterface.createTable('allcodes', {
+    //     currentNumber: DataTypes.INTEGER,
+    // maxNumber: DataTypes.INTEGER,
+    // date: DataTypes.DATE,
+    // timeType:DataTypes.STRING,
+    // doctorId:DataTypes.INTEGER,
+    // roleid: DataTypes.STRING
 
       id: {
         allowNull: false,
@@ -13,24 +19,26 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      email: {
-        type: Sequelize.STRING
+      currentNumber: {
+        type: Sequelize.INTEGER
       },
-      firstName: {
-        type: Sequelize.STRING
+      maxNumber: {
+        type: Sequelize.INTEGER
       },
-      lastName: {
-        type: Sequelize.STRING
+      date: {
+        type: Sequelize.DATE
       },
-      adress:{
+      timeType:{
         type : Sequelize.STRING
       },
-      gender:{
-        type : Sequelize.STRING
+      doctorId:{
+        type : Sequelize.INTEGER
       },
       roleid:{
-        type:Sequelize.BOOLEAN
+        type : Sequelize.STRING
       },
+
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -42,6 +50,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Users');
+    await queryInterface.dropTable('allcodes');
   }
 };

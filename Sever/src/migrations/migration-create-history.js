@@ -5,7 +5,7 @@ const { sequelize } = require('../models');
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('allcodes', {
+    await queryInterface.createTable('histories', {
 
       id: {
         allowNull: false,
@@ -13,29 +13,30 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      key: {
-        type: Sequelize.STRING
+      parientId:{
+        type:Sequelize.INTEGER
       },
-      type: {
-        type: Sequelize.STRING
+      doctorId:{
+        type:Sequelize.INTEGER
       },
-      valueEn: {
-        type: Sequelize.STRING
-      },
-      valueVi:{
-        type : Sequelize.STRING
+      description:{
+        type:Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
       },
+      file:{
+        type:Sequelize.TEXT
+      },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
-      },
+      }
+
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('allcodes');
+    await queryInterface.dropTable('histories');
   }
 };
