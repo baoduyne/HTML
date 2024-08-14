@@ -1,4 +1,5 @@
 const bcrypt = require('bcrypt');
+import { reject } from 'bcrypt/promises';
 import db from '../models/index';
 const salt = bcrypt.genSaltSync(10);
 
@@ -16,7 +17,7 @@ let createNewUser = async (data) =>{
                 gender:data.gender === '1'?true:false,
                 roleId: data.roleId,
             });
-            resolve('created successful!');
+            resolve('created new user successful!');
         }
         catch(e){
             reject(e);
@@ -35,6 +36,7 @@ let hashUserPassword = (password) => {
         }
     })
 }
+
 
 module.exports = {
     createNewUser : createNewUser
