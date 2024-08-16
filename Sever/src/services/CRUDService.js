@@ -56,18 +56,39 @@ let getAllUser =() => {
 let deleteUser = () =>{
     return new Promise(async(resolve,reject) =>{
         try{
-            db.User.destroy({
+            await db.User.destroy({
                 where :{
                     email : "lobaoduy2017@gmail.com",
                 }
             })
-            resolve(db);
+            resolve();
         }
-    
         catch(e){
             reject(e);
         }
     })
+}
+
+let getUserInfoById = (userId) =>{
+    return new Promise(async(resolve,reject) =>{
+        try{
+            let user = await db.User.findOne({
+                where:{id:userId},
+                raw :true
+            })
+
+            if(user){
+                resolve(user);
+            }
+            else{
+                resolve({})
+            }
+        }   
+        catch(e){
+            reject(e);
+        }
+    })
+
 }
 
 
@@ -75,4 +96,5 @@ module.exports = {
     createNewUser : createNewUser,
     getAllUser : getAllUser,
     deleteUser : deleteUser,
+    getUserInfoById : getUserInfoById
 }
