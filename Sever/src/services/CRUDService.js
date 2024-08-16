@@ -25,6 +25,8 @@ let createNewUser = async (data) =>{
     })
 }
 
+
+
 let hashUserPassword = (password) => {
     return new Promise( async (resolve,reject) =>{
         try{
@@ -37,7 +39,40 @@ let hashUserPassword = (password) => {
     })
 }
 
+let getAllUser =() => {
+    return new Promise( async (resolve,reject) => {
+        try{
+            let users = db.User.findAll({
+                raw: true,
+            });
+            resolve(users);
+        }
+        catch(e){
+            reject(e);
+        }
+    })
+}
+
+let deleteUser = () =>{
+    return new Promise(async(resolve,reject) =>{
+        try{
+            db.User.destroy({
+                where :{
+                    email : "lobaoduy2017@gmail.com",
+                }
+            })
+            resolve(db);
+        }
+    
+        catch(e){
+            reject(e);
+        }
+    })
+}
+
 
 module.exports = {
-    createNewUser : createNewUser
+    createNewUser : createNewUser,
+    getAllUser : getAllUser,
+    deleteUser : deleteUser,
 }
