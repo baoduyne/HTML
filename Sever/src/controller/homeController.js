@@ -2,13 +2,11 @@ import db from'../models/index';
 import CRUD from "../services/CRUDService"
 let getHomePage = async (req,res) => {
     try{
-        let data = await db.User.findAll();
-        console.log("----------");
-        console.log(data);
-        console.log("----------");
-        return res.render("homepage.ejs",{
-            data: JSON.stringify(data)
-        });
+        // //let data = await db.User.findAll();
+        // //console.log("----------");
+        // //console.log(data);
+        // console.log("----------");
+        return res.render("homepage.ejs",);//{data: JSON.stringify(data) });
     }
     catch(e){
         console.log(e);
@@ -38,10 +36,6 @@ return res.render('displayCRUD.ejs',{
 });
 }
 
-let deleteUser = async (req,res) =>{
-    await CRUD.deleteUser();
-    return res.send("done!");
-}
 
 let getEditCRUD = async (req,res) =>{
     let userId = req.query.id;
@@ -57,12 +51,32 @@ let getEditCRUD = async (req,res) =>{
     });
 }
 
+let putCRUD = async (req,res) =>{
+    let data = req.body;
+    let allUsers = await CRUD.updateUserData(data);
+    return res.render('displayCRUD.ejs',{
+        dataTable:allUsers
+    })
+}
+
+let deleteCRUD = async (req,res) =>{
+    let userId = req.query.id;
+    if(userId){
+    await CRUD.deleteUserById(userId);
+    return res.send("Delete user successed");
+    }
+    else{
+    return res.send("User not found");
+    }
+}
+
 module.exports = {
     getHomePage : getHomePage,
     getAboutPage : getAboutPage,
     getCRUD : getCRUD,
     postCRUD : postCRUD,
     displayGetCRUD : displayGetCRUD,
-    deleteUser : deleteUser,
-    getEditCRUD:getEditCRUD
+    getEditCRUD:getEditCRUD,
+    putCRUD : putCRUD,
+    deleteCRUD:deleteCRUD
 }
