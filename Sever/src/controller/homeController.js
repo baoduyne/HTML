@@ -21,9 +21,11 @@ let getCRUD = (req,res) => {
     return res.render("crud.ejs");
 }
 let postCRUD = async (req,res) =>{
-    let message = await CRUD.createNewUser(req.body);
-    console.log(message);
-    return res.send("post crud from sever");
+    await CRUD.createNewUser(req.body);
+    let data = await CRUD.getAllUser();
+    return res.render('displayCRUD.ejs',{
+        dataTable:data
+    });
 }
 
 let displayGetCRUD = async (req,res) => {

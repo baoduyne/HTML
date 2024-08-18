@@ -20,3 +20,6 @@ let port = process.env.PORT || 6969;
 app.listen(port,()=>{
     console.log("Backend Nodejs is running on the port :" + port)
 });
+
+
+// node version : 22.5.1
