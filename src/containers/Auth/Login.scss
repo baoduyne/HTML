@@ -1,18 +1,23 @@
+
 .login-background{
     background: rgb(34,193,195);
     background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%);
-    font-family: "work sans";
+    font-family:sans-serif;
     height: 100vh;
 }
 
 .login-container{
     width:400px;
-    height: 100%;
-    margin : 0 auto;
-    border : 1px solid red;
+    margin : auto;
     padding:10px;
     border-radius: 10px;
     background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    height:410px;
 
         .login-content{
             padding:10px;
@@ -21,10 +26,17 @@
                 font-size:large;
                 font-weight: 600;
                 padding-top:10px;
-                font-family: "work sans";
+                
             }
             .login-input{
                 margin:7px 0;
+                position: relative;
+                .icon-input{
+                    position: absolute;
+                    right: 15px;
+                    bottom: 10px;
+                    cursor: pointer;
+                }
             }
             .btn-login {
                 width: 100%;
